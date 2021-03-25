@@ -1,0 +1,36 @@
+.form-popup {
+
+    display: none;
+    position: fixed;
+    
+    
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+  width: 550px;
+   height: 450px;
+   margin: auto;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .textbox {
+    width: 250px;
+    height: 250px;
+    font-size: 15px;
+    margin: auto;
+    background: #f1f1f1;
+  }
+
+  .open-button
+  {
+      display: flex;
+      justify-content:  center;
+      align-items: center;
+      width: 60pxpx;
+      height: 50px;
+      margin: 0;
+  }
