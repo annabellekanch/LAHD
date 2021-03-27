@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Natchitoches</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://kit.fontawesome.com/1a1742dd5d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation Pane-->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="Directory.html" id="navbar_logo">
+                    <span style="font-size: 30px; color: #3d486b; "><i class="fas fa-arrow-left"></i></span>
+                    Navigate back to the directory</a>
+            </div>
+        </nav> 
+        <!--Header-->
+        <div class="header" id="header">
+            <div class="header_container">
+                <h1>Acute Care Facilities in Natchitoches</h1>
+            </div>
+        </div>
+        <!--Facilities-->
+        <!--Natchitoches Regional Medical Center-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.nrmchospital.org/" target = "_blank">
+                    <img src = "img/natNachitoches.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Natchitoches Regional Medical Center</h1>
+                <div class = "facilities_location">
+                    <span>501 Keyser Avenue, Natchitoches, LA  71457</span>
+                    <span>(318) 214-4200</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="nat" id = "input1List" class = "List">
+                        <option name = "input1" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input1" value="Total Discharges">Total Discharges</option>
+                        <option name = "input1" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input1" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input1" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput1();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+    </body>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background-image: url(img/bg.jpg);
+        background-size: cover;
+    }
+    /*Navigation Pane Styling*/
+    #navbar_logo 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 27px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+        background: #283048;
+        background: -webkit-linear-gradient(to right, #859398, #283048); 
+        background: linear-gradient(to right, #859398, #283048); 
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items:  center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .navbar_container
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        color: #222;
+        font-size: 11px;
+        float: left;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    .navbar_container span
+    {
+        margin: 0 0.8rem;
+    }
+    /*Header Styling*/
+    .header_container h1
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: lighter;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+        text-align: right;
+        padding: 1.5rem 4rem;
+        background: #000000; 
+        background-size: 50%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        cursor: pointer;
+    }
+    /*Facility Description Styling*/
+    .facilities
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        width: 1200px;
+        margin: 0 2rem;
+        max-width: 97rem;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 120px;
+        background-color: #43b1f17a;
+        display: inline-flex;
+        border-radius: 4rem;
+        list-style: none;
+    }
+    img
+    {
+        box-shadow: border-box;
+        width: 350px;
+    }
+    .facilities_img
+    {
+        padding: 1px;
+        min-width: 36rem;
+        max-width: 36rem;
+        transform: translateX(-1rem);
+    }
+    .facilities_img img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        display: flex;
+        border-radius: 0.9rem;
+    }
+    .facilities_location span
+    {
+        display: block;
+        color: #000000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0.5rem 0;
+    }
+    .facilities_name
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        margin: 1.5rem, 0.2rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .facilities_list
+    {
+        list-style: none;
+        margin-bottom: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+            /*Search Bar & Search Button styling*/
+            .List
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-raidus: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-raidus: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
+
+    }
+    #searchBtn
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        right: -1%;
+        bottom: 3px;
+        border: 1px solid #000;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 18px;
+        background: #c4e6ff;
+        cursor: pointer;
+        outline: none;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-raidus: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-raidus: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
+    }
+    #searchBtn:hover
+    {
+        background: #E2F8FF;
+    }
+    </style>
+    <script>
+        //Visual Studio Code live server doesn't accept files directly so we need a function to read the text file through a XML Http Request
+        function readTextFile(file) 
+        {
+            var textfile = new XMLHttpRequest();
+            textfile.open("GET", file, false); 
+            var text = "";
+            textfile.onreadystatechange = function ()
+            {
+                if(textfile.readyState === 4) // readyState = 4: request finished and response is ready
+                {
+                    if(textfile.status === 200) // status 200: "OK"
+                    {
+                        text = textfile.responseText; //Returning the text file data as a string
+                    }
+                }
+            }
+            textfile.send(null); //Sending the request to the server with a null parameter
+            return text; 
+        }
+        //SearchList function will search through the string of text and then separate the string by column. The text being passed through is information on the list of cities and their individual pages 
+        function SearchInput1()
+        {
+           var nametxt = document.getElementById("input1List").name;
+           var searchtxt = document.getElementById("input1List", ).value;
+           var surl = "";
+           var file = "Natchitoches.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+        </script>
+</html>

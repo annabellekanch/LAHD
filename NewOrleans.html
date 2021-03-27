@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>New Orleans</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://kit.fontawesome.com/1a1742dd5d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation Pane-->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="Directory.html" id="navbar_logo">
+                    <span style="font-size: 30px; color: #3d486b; "><i class="fas fa-arrow-left"></i></span>
+                    Navigate back to the directory</a>
+            </div>
+        </nav> 
+        <!--Header-->
+        <div class="header" id="header">
+            <div class="header_container">
+                <h1>Acute Care Facilities in New Orleans</h1>
+            </div>
+        </div>
+        <!--Facilities-->
+        <!--New Orleans East Hospital-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.noehospital.org/">
+                    <img src = "img/eastNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">New Orleans East Hospital</h1>
+                <div class = "facilities_location">
+                    <span>5620 Read Boulevard, New Orleans , LA  70127</span>
+                    <span>(504) 592-6600</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="east" id = "input1List" class = "List">
+                        <option name = "input1" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input1" value="Total Discharges">Total Discharges</option>
+                        <option name = "input1" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input1" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input1" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput1();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--Ochsner Baptist - A Campus of Ochsner Medical Center-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.ochsner.org/locations/ochsner-baptist">
+                    <img src = "img/baptNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Ochsner Baptist - A Campus of Ochsner Medical Center</h1>
+                <div class = "facilities_location">
+                    <span>2700 Napoleon Avenue, New Orleans, LA  70115</span>
+                    <span>(504) 899-9311</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="bapt" id = "input2List" class = "List">
+                        <option name = "input2" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input2" value="Total Discharges">Total Discharges</option>
+                        <option name = "input2" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input2" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input2" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput2();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--Ochsner Medical Center-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.ochsner.org/locations/ochsner-medical-center">
+                    <img src = "img/ochsNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Ochsner Medical Center</h1>
+                <div class = "facilities_location">
+                    <span>1514 Jefferson Highway, New Orleans, LA  70121</span>
+                    <span>(985) 898-4000</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="ochs" id = "input3List" class = "List">
+                        <option name = "input3" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input3" value="Total Discharges">Total Discharges</option>
+                        <option name = "input3" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input3" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input3" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput3();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>           
+        <!--Saint Charles Surgical Hospital-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.scsh.com/">
+                    <img src = "img/charNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Saint Charles Surgical Hospital</h1>
+                <div class = "facilities_location">
+                    <span>1717 Saint Charles Avenue, New Orleans, LA  70130</span>
+                    <span>(504) 529-6600</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="char" id = "input4List" class = "List">
+                        <option name = "input4" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input4" value="Total Discharges">Total Discharges</option>
+                        <option name = "input4" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input4" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input4" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput4();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>                
+        <!--Touro Infirmary-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.touro.com/">
+                    <img src = "img/tourNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Touro Infirmary</h1>
+                <div class = "facilities_location">
+                    <span>1401 Foucher Street, New Orleans, LA  70115</span>
+                    <span>(844) 392-4640</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="tour" id = "input6List" class = "List">
+                        <option name = "input6" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input6" value="Total Discharges">Total Discharges</option>
+                        <option name = "input6" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input6" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input6" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput6();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>           
+        <!--Tulane Medical Center-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "https://www.ochsner.org/locations/ochsner-medical-center">
+                    <img src = "img/tulaneNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">Tulane Medical Center</h1>
+                <div class = "facilities_location">
+                    <span>1415 Tulane Avenue, New Orleans, LA  70112</span>
+                    <span>(504) 988-5263</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="tulane" id = "input7List" class = "List">
+                        <option name = "input7" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input7" value="Total Discharges">Total Discharges</option>
+                        <option name = "input7" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input7" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input7" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput7();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>           
+        <!--University Medical Center New Orleans-->
+        <div class = "facilities">
+            <div class = "facilities_img">
+                <a href = "">
+                    <img src = "img/uniNewOrleans.jpg" alt = ""></a>
+            </div>
+            <div class = "facilities_info">
+                <h1 class = "facilities_name">University Medical Center New Orleans</h1>
+                <div class = "facilities_location">
+                    <span>1415 Tulane Avenue, New Orleans, LA  70112</span>
+                    <span>(504) 988-5263</span>
+                </div>
+                <br>
+                <form action = 'javascript:void(0)' class = "form" id = "form">
+                    <select name="uni" id = "input8List" class = "List">
+                        <option name = "input8" value="Staffed Beds">Staffed Beds</option>
+                        <option name = "input8" value="Total Discharges">Total Discharges</option>
+                        <option name = "input8" value="Total Patient Days">Total Patient Days</option>
+                        <option name = "input8" value="TPS Quality Score">TPS Quality Score</option>
+                        <option name = "input8" value="Patient Experience">Patient Experience</option>
+                      </select>
+                    <input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchInput8();"/>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>           
+    </body>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background-image: url(img/bg.jpg);
+        background-size: cover;
+    }
+    /*Navigation Pane Styling*/
+    #navbar_logo 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 27px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+        background: #283048;
+        background: -webkit-linear-gradient(to right, #859398, #283048); 
+        background: linear-gradient(to right, #859398, #283048); 
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items:  center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .navbar_container
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        color: #222;
+        font-size: 11px;
+        float: left;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    .navbar_container span
+    {
+        margin: 0 0.8rem;
+    }
+    /*Header Styling*/
+    .header_container h1
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: lighter;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+        text-align: right;
+        padding: 1.5rem 4rem;
+        background: #000000; 
+        background-size: 50%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        cursor: pointer;
+    }
+    /*Facility Description Styling*/
+    .facilities
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        width: 1200px;
+        margin: 0 2rem;
+        max-width: 97rem;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 120px;
+        background-color: #43b1f17a;
+        display: inline-flex;
+        border-radius: 4rem;
+        list-style: none;
+    }
+    img
+    {
+        box-shadow: border-box;
+        width: 350px;
+    }
+    .facilities_img
+    {
+        padding: 1px;
+        min-width: 36rem;
+        max-width: 36rem;
+        transform: translateX(-1rem);
+    }
+    .facilities_img img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        display: flex;
+        border-radius: 0.9rem;
+    }
+    .facilities_location span
+    {
+        display: block;
+        color: #000000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0.5rem 0;
+    }
+    .facilities_name
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        margin: 1.5rem, 0.2rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .facilities_list
+    {
+        list-style: none;
+        margin-bottom: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+            /*Search Bar & Search Button styling*/
+            .List
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-raidus: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-raidus: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
+
+    }
+    #searchBtn
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        right: -1%;
+        bottom: 3px;
+        border: 1px solid #000;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 18px;
+        background: #c4e6ff;
+        cursor: pointer;
+        outline: none;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-raidus: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-raidus: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
+    }
+    #searchBtn:hover
+    {
+        background: #E2F8FF;
+    }
+    </style>
+    <script>
+        //Visual Studio Code live server doesn't accept files directly so we need a function to read the text file through a XML Http Request
+        function readTextFile(file) 
+        {
+            var textfile = new XMLHttpRequest();
+            textfile.open("GET", file, false); 
+            var text = "";
+            textfile.onreadystatechange = function ()
+            {
+                if(textfile.readyState === 4) // readyState = 4: request finished and response is ready
+                {
+                    if(textfile.status === 200) // status 200: "OK"
+                    {
+                        text = textfile.responseText; //Returning the text file data as a string
+                    }
+                }
+            }
+            textfile.send(null); //Sending the request to the server with a null parameter
+            return text; 
+        }
+        //SearchList function will search through the string of text and then separate the string by column. The text being passed through is information on the list of cities and their individual pages 
+        function SearchInput1()
+        {
+           var nametxt = document.getElementById("input1List").name;
+           var searchtxt = document.getElementById("input1List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput2()
+        {
+           var nametxt = document.getElementById("input2List").name;
+           var searchtxt = document.getElementById("input2List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput3()
+        {
+           var nametxt = document.getElementById("input3List").name;
+           var searchtxt = document.getElementById("input3List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput4()
+        {
+           var nametxt = document.getElementById("input4List").name;
+           var searchtxt = document.getElementById("input4List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput6()
+        {
+           var nametxt = document.getElementById("input6List").name;
+           var searchtxt = document.getElementById("input6List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput7()
+        {
+           var nametxt = document.getElementById("input7List").name;
+           var searchtxt = document.getElementById("input7List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+         }
+         function SearchInput8()
+        {
+           var nametxt = document.getElementById("input8List").name;
+           var searchtxt = document.getElementById("input8List", ).value;
+           var surl = "";
+           var file = "NewOrleans.txt";
+           var text = "";
+
+           text = readTextFile(file);
+           var rows = text.split('\n');
+           for (var i = 0; i < rows.length; i++) //goes through the string line by line
+           {
+               //split by separator (.) and get the columns
+               cols = rows[i].split('|');
+               if(cols[0] == nametxt)
+               {
+                       switch(searchtxt) {
+                            case "Staffed Beds":
+                                surl ="Staffed Beds: " +  cols[1];
+                                break;
+                            case "Total Discharges":
+                                surl ="Total Discharges: " +  cols[2];
+                                break;
+                            case "Total Patient Days":
+                                surl ="Total Patient Days: " +  cols[3];
+                                break;
+                            case "TPS Quality Score":
+                            surl ="TPS Quality Score: " +  cols[4];
+                                break;
+                            case "Patient Experience":
+                            surl ="Patient Experience: " +  cols[5];
+                                break;
+                            default:
+                                // code block
+                            }
+                            swal({  input: "text" , text: surl,button:'close'})
+
+               }
+            }
+           
+        }
+        </script>
+</html>
