@@ -1,0 +1,152 @@
+/*Styling Covid Stats Page*/
+body
+{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+
+}
+#navbar_logo 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 27px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+        background: #283048;
+        background: -webkit-linear-gradient(to right, #859398, #283048); 
+        background: linear-gradient(to right, #859398, #283048); 
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items:  center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .navbar_container
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        color: #222;
+        font-size: 11px;;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .navbar_container span
+    {
+        margin: 0 0.8rem;
+    }
+    /*Covid Stats Styling*/
+    #btn
+    {
+        background-color: rgb(209, 223, 255);
+        border-color: black;
+        border-style:outset;
+    }
+    
+    .covid
+    {
+        z-index: 1;
+        width: 70%;
+        margin: 65px auto;
+        border-radius: 24px; 
+        background: #3aa4eb73;
+        padding: 2%;
+        box-shadow: 0px, 10px, 6px, -8px rgba(0,0,0,0.75);
+    }
+    .board
+    {
+        column-count: 3;
+        column-gap: 1rem;
+    }
+    .covid h2
+    {
+        margin: 0 0 30px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+    }
+    img#pic
+    {
+        height: 40px;
+        width: 40px;
+        margin: 0.3rem 0.2rem;
+    }
+    .card
+    {
+        
+        width: 84%;
+        background: #ccc;
+        padding: 8%;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        color: #fff;
+    }
+    .card.a
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background: #77cfffde;
+    }
+    .card.cr
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background:#a7e5f5e1;
+    }
+    .card.r
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background:#77cfffde;
+    }
+    .card.ca 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background: #a7e5f5e1;
+    }
+    .card.d 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background: #77cfffde;
+    }
+    .card.t 
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        background:#a7e5f5e1;
+    }
+    .card span
+    {
+        font-size: 3rem;
+        font-weight: lighter;
+        letter-spacing: 4px;
+    }
+    .card i
+    {
+        font-size:  3rem;
+    }
+    @media screen and (max-width: 768px)
+    {
+        .board
+        {
+            column-count: 2;
+        }
+    }
+    @media screen and (max-width: 500px)
+    {
+        .board
+        {
+            column-count: 1;
+        }
+    }
