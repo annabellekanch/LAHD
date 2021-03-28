@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+		<script src="https://kit.fontawesome.com/1a1742dd5d.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel = "stylesheet" href = "SignIn.css"/>
+        <script src = "SignIn.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+		<nav class="navbar">
+            <div class="navbar_container">
+                <a href="Home.html" id="navbar_logo">
+                    <span style="font-size: 30px; color: #3d486b; "><i class="fas fa-arrow-left"></i></span>
+                    Navigate back to Home</a>
+            </div>
+            <!--Form to take in username and password from the user-->
+        <div class = "loginpage">
+            <div class = "form">
+				<h1>Sign In!</h1>
+                <form id = "form"class = "login">
+                    <input id = "name" type = "text" placeholder = "username"/>
+                    <input  id = "pass" type = "password" placeholder = "password"/>
+                    <button id = "btn" onclick = "checkUser();">Login</button>
+                    <br>
+                    <br>
+                   <p class = "msg"><a href = "#">Forgot Password?</a><br><br><a href = "SignUp.html">Not Registered?</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
