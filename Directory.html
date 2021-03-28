@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Hospital Directory</title>
+        <link rel = "stylesheet"  href = "Directory.css"/> 
+        <script src="https://kit.fontawesome.com/1a1742dd5d.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src = "Directory.js"></script>
+    </head>
+    <body>
+        <!--Navigation Section-->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="Home.html#services" id="navbar_logo">
+                    <span style="font-size: 30px; color: #0c31ac;"><i class="fas fa-arrow-left"></i></span>
+                    Navigate back to home</a>
+            </div> 
+        </nav> 
+        <!--Heading Section-->
+        <div class="header" id="header">
+            <div class="header_container">
+                <h1>Louisiana Acute Care Facility Directory</h1>
+                <h2>Select a city to view facilities in your area!</h2>
+            </div>
+        </div>
+        <!--Search Bar-->
+        <form action = 'javascript:void(0)' class = "form">
+            <input type = "text" id = "searchBar" placeholder = "Search for a city" value = "" maxlength="25" autocomplete="off" onMouseDown="active();" onBlur="inactive();"/><input type = "submit" id = "searchBtn" value = "Go!" onClick = "SearchList();"/>
+        </form>
+        <!--Drop Down List of Cities-->
+        <ul >
+            <li><a  class = "columns" href = "#">A</a>
+                <ul>
+                    <li><a href = "Cities/Abbeville.html">Abbeville</a></li>
+                    <li><a href = "Alexandria.html">Alexandria</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns"href = "#">B</a>
+                <ul>
+                    <li><a href = "Bastrop.html">Bastrop</a></li>
+                    <li><a href = "BatonRouge.html">Baton Rouge</a></li>
+                    <li><a href = "Bogalusa.html">Bogalusa</a></li>
+                    <li><a href = "Bosier.html">Bosier</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns"href = "#">C</a>
+                <ul>
+                    <li><a href="Chalmette.html">Chalmette</a></li>
+                    <li><a href="Columbia.html">Columbia</a></li>
+                    <li><a href="Covington.html">Covington</a></li>
+                    <li><a href="Crowley.html">Crowley</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns"href = "#">D</a>
+                <ul>
+                    <li><a href = "DeRidder.html">DeRidder</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">E</a>
+                <ul>
+                    <li><a href = "Eunice.html">Eunice</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">F</a>
+                <ul>
+                    <li><a href = "FortPolk.html">Fort Polk</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">G</a>
+                <ul>
+                    <li><a href = "Gretna.html">Gretna</a></li>
+                    <li><a href = "Gonzales.html">Gonzales</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">H</a>
+                <ul>
+                    <li><a href = "Hammond.html">Hammond</a></li>
+                    <li><a href = "Homer.html">Homer</a></li>
+                    <li><a href = "Houma.html">Houma</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">J</a>
+                <ul>
+                    <li><a href = "Jackson.html">Jackson</a></li>
+                    <li><a href = "Jena.html">Jena</a></li>
+                    <li><a href = "Jennings.html">Jennings</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">K</a>
+                <ul>
+                    <li><a href = "Kenner.html">Kenner</a></li> 
+                    <li><a href = "Kinder.html">Kinder</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">L</a>
+                <ul>
+                    <li><a href = "Lafayette.html">Lafayette</a></li>
+                    <li><a href = "LakeCharles.html">Lake Charles</a></li> 
+                    <li><a href = "LakeProvidence.html">Lake Providence</a></li>
+                    <li><a href = "Leesville.html">Leesville</a></li>
+                    <li><a href = "Luling.html">Luling</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">M</a>
+                <ul>
+                    <li><a href = "construction.html">Mansfield</a></li>
+                    <li><a href = "construction.html">Marksville</a></li> 
+                    <li><a href = "construction.html">Marrero</a></li>
+                    <li><a href = "construction.html">Metairie</a></li>
+                    <li><a href = "construction.html">Minden</a></li>
+                    <li><a href = "construction.html">Monroe</a></li>
+                    <li><a href = "construction.html">Morgan City</a></li>
+                    <li><a href = "construction.html">Mamou</a></li>
+                    <li><a href = "construction.html">Many</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">N</a>
+                <ul>
+                    <li><a href = "Natchitoches.html">Natchitoches</a></li> 
+                    <li><a href = "NewIberia.html">New Iberia</a></li>
+                    <li><a href = "NewOrleans.html">New Orleans</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">O</a>
+                <ul>
+                    <li><a href = "OakGrove.html">Oak Grove</a></li> 
+                    <li><a href = "Opelousas.html">Opelousas</a></li>
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">P</a>
+                <ul>
+                    <li><a href = "Pineville.html">Pineville</a></li>
+                    <li><a href = "Prairieville.html">Prairieville</a></li> 
+                </ul>
+            </li>
+            <li><a class = "columns"href = "#">R</a>
+                <ul>
+                    <li><a href = "Ruston.html">Ruston</a></li>
+                    <li><a href = "Rayville.html">Rayville</a></li> 
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">S</a>
+                <ul>
+                    <li><a href = "Shreveport.html">Shreveport</a></li>
+                    <li><a href = "Slidell.html">Slidell</a></li> 
+                    <li><a href = "Springhill.html">Springhill</a></li>
+                    <li><a href = "Sulphur.html">Suplhur</a></li> 
+                </ul>
+            </li>
+            <li><a class = "columns"href = "#">V</a>
+                <ul>
+                    <li><a href = "VillePlatte.html">Ville Platte</a></li> 
+                </ul>
+            </li>
+            <li><a  class = "columns"href = "#">W</a>
+                <ul>
+                    <li><a href = "WestMonroe.html">West Monroe</a></li>
+                    <li><a href = "Winnfield.html">Winnfield</a></li> 
+                    <li><a href = "Winnsboro.html">Winnsboro</a></li> 
+                </ul>
+            </li>
+            <li><a class = "columns" href = "#">Z</a>
+                <ul>
+                    <li><a href = "Zachary.html">Zachary</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <br>
+    </body>
+</html>
