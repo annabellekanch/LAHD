@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+		<script src="https://kit.fontawesome.com/1a1742dd5d.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+		<nav class="navbar">
+            <div class="navbar_container">
+                <a href="Home.html" id="navbar_logo">
+                    <span style="font-size: 30px; color: #3d486b; "><i class="fas fa-arrow-left"></i></span>
+                    Navigate back to Home</a>
+            </div>
+            <!--Form to take in username and password from the user-->
+        <div class = "loginpage">
+            <div class = "form">
+				<h1>Sign In!</h1>
+                <form id = "form"class = "login">
+                    <input id = "name" type = "text" placeholder = "username"/>
+                    <input  id = "pass" type = "password" placeholder = "password"/>
+                    <button id = "btn" onclick = "checkUser();">Login</button>
+                    <br>
+                    <br>
+                   <p class = "msg"><a href = "#">Forgot Password?</a><br><br><a href = "SignUp.html">Not Registered?</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+    <style>
+        body
+        {
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+        }
+        /*Styling Navigation Bar*/
+		#navbar_logo
+        {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 27px;
+            font-weight: lighter;
+            line-height: 55px;
+            padding: 0px 20px;
+            background: #283048;  
+            background: -webkit-linear-gradient(to right, #859398, #283048);  
+            background: linear-gradient(to right, #859398, #283048);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -mox-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            display: flex;
+            align-items:  center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .navbar_container span
+        {
+            margin: 0.6rem;
+        }
+        #navbar_logo 
+        {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 27px;
+        line-height: 55px;
+        float: left;
+        background: #283048;
+        background: -webkit-linear-gradient(to right, #859398, #283048); 
+        background: linear-gradient(to right, #859398, #283048); 
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -mox-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items:  center;
+        cursor: pointer;
+        text-decoration: none;
+        }
+        .navbar_container
+        {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            color: #222;
+            font-size: 11px;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        .navbar_container span
+        {
+            margin: 0 0.8rem;
+        }
+        /*Styling Login Form*/
+        .loginpage
+        {
+            width: 390px;
+            padding: 10%, 0,0;
+            margin: 80px auto;
+
+        }
+        .form
+        {
+            position: relative;
+            z-index:1; 
+            background-color: rgba(66, 177, 241, 0.719);
+            max-width: 360px;
+            margin: 100px auto 300px;
+            padding: 90px;
+            text-align: auto;
+        }
+
+        .form input
+        {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            outline: 1;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            margin: 0 0 20px;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            font-size: 14px;
+        } 
+        .msg
+        {
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .msg a
+        {
+            text-decoration: none;
+        }
+		.form h1
+		{
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-weight: lighter;
+		}
+        .form button
+        {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            text-transform: uppercase;
+            outline: 0;
+            background: #598edd;
+            width: 100%;
+            border: 0;
+            margin: auto;
+            padding: 15px 25px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        .form button:hover, .form button:active
+        {
+            background: rgb(36, 127, 230);
+        }
+    </style>
+    <script>
+        //funcion to display different messages depending on the input given by the user. Currently we do not have a working database to input 
+        //username and password information of a user, once we get further into our respective CSC major fields we will incorporate a database into
+        //our project
+        function checkUser()
+        {
+            event.preventDefault();
+            checkFail();
+            correctUser();
+            checkEmpty();
+           document.getElementById("form").reset();
+
+        }
+        function correctUser()
+        {
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("pass").value;
+            
+            if(username == "AnnabelleKanch")
+            {
+                if(password == "something")
+                {
+                    swal({title:"Welcome " + username, icon: "success", button: "Close"});
+                }
+            }
+        }
+        function checkEmpty()
+        {
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("pass").value;
+            if(username == "" || password == "")
+			{
+				swal({title:"Please Enter All Fields", icon: "error", button: "Close"});
+			}
+        }
+        function checkFail()
+        {
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("pass").value;
+            
+            if(username != "Annabelle" || password != "something")
+            {
+                swal({title:"Invalid Username & Password Combination", text: "Register as a new user or Try Again!" ,icon: "error", button: "Close"});
+            }
+            if(password != "" || password != "")
+            {
+                swal({title:"Invalid Username & Password Combination", text: "Register as a new user or Try Again!" ,icon: "error", button: "Close"});
+            }
+            
+        }
+    </script>
+</html>
