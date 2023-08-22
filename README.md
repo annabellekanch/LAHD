@@ -14,14 +14,15 @@ Service Page:
 
 
 Covide-9 statistic Page:
-![image](https://github.com/annabellekanch/LAHD/assets/77216805/0c622b59-3eff-4a35-8dc5-04cf98440b0b)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/db6896c1-5574-42a0-9508-592d18a60f10)
 
 About Us Page:
-![5](https://github.com/annabellekanch/LAHD/assets/77216805/488e64e0-30eb-4a70-9adc-4f6df83f0c7a)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/9eb4f580-a9db-45da-8b1c-ed07a50f6f07)
+
 
 Login/Sign-Up Page:
-![6](https://github.com/annabellekanch/LAHD/assets/77216805/ec3eb7e5-5473-4c0e-b87a-099d4dae3b16)
-![3](https://github.com/annabellekanch/LAHD/assets/77216805/63d3637c-38e1-4c1b-a647-a1520423d46b)
-![4](https://github.com/annabellekanch/LAHD/assets/77216805/71df1592-c5f4-42a0-91ce-c42e9243b2a0)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/112a06b7-7489-47c8-a1a9-186d70f6ef3f)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/414bd0e1-1bfb-4db0-95ec-002d33a36073)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/351856a1-fb1e-438b-9fcc-01c5d32b6486)
 
 
