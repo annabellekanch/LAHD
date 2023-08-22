@@ -10,7 +10,8 @@ Home Page:
 
 
 Service Page:
-![2](https://github.com/annabellekanch/LAHD/assets/77216805/52c6964c-a574-4bfd-854b-e9dd5183c119)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/67368d3a-835c-4f94-a3b0-788ede72a439)
+
 
 Covide-9 statistic Page:
 ![image](https://github.com/annabellekanch/LAHD/assets/77216805/0c622b59-3eff-4a35-8dc5-04cf98440b0b)
