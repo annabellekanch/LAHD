@@ -6,7 +6,8 @@ In this course we learned about OO design principles and utilizing UML for softw
 ## Images
 
 Home Page:
-![1](https://github.com/annabellekanch/LAHD/assets/77216805/0c54e9d9-7106-4f9c-bd36-ba3937236a02)
+![image](https://github.com/annabellekanch/LAHD/assets/77216805/cbc7f4e7-4fb4-4b34-8d3f-afb2cab95cb6)
+
 
 Service Page:
 ![2](https://github.com/annabellekanch/LAHD/assets/77216805/52c6964c-a574-4bfd-854b-e9dd5183c119)
